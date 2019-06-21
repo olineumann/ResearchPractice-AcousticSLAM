@@ -1,0 +1,173 @@
+
+@article{grisetti_tutorial_2010,
+	title = {A Tutorial on Graph-Based {SLAM}},
+	volume = {2},
+	issn = {1939-1390},
+	url = {http://ieeexplore.ieee.org/document/5681215/},
+	doi = {10.1109/MITS.2010.939925},
+	abstract = {Being able to build a map of the environment and to simultaneously localize within this map is an essential skill for mobile robots navigating in unknown environments in absence of external referencing systems such as {GPS}. This so-called simultaneous localization and mapping ({SLAM}) problem has been one of the most popular research topics in mobile robotics for the last two decades and efﬁcient approaches for solving this task have been proposed. One intuitive way of formulating {SLAM} is to use a graph whose nodes correspond to the poses of the robot at different points in time and whose edges represent constraints between the poses. The latter are obtained from observations of the environment or from movement actions carried out by the robot. Once such a graph is constructed, the map can be computed by ﬁnding the spatial conﬁguration of the nodes that is mostly consistent with the measurements modeled by the edges. In this paper, we provide an introductory description to the graph-based {SLAM} problem. Furthermore, we discuss a state-of-the-art solution that is based on least-squares error minimization and exploits the structure of the {SLAM} problems during optimization. The goal of this tutorial is to enable the reader to implement the proposed methods from scratch.},
+	pages = {31--43},
+	number = {4},
+	journaltitle = {{IEEE} Intelligent Transportation Systems Magazine},
+	shortjournal = {{IEEE} Intell. Transport. Syst. Mag.},
+	author = {Grisetti, G and Kummerle, R and Stachniss, C and Burgard, W},
+	urldate = {2019-06-17},
+	date = {2010},
+	langid = {english},
+	file = {Grisetti et al. - 2010 - A Tutorial on Graph-Based SLAM.pdf:/home/oliver/Zotero/storage/QSRPDHJU/Grisetti et al. - 2010 - A Tutorial on Graph-Based SLAM.pdf:application/pdf}
+}
+
+@INBOOK{kalman_filter_2001,
+	author={T. {Basar}},
+	booktitle={Control Theory: Twenty-Five Seminal Papers (1932-1981)},
+	title={A New Approach to Linear Filtering and Prediction Problems},
+	year={2001},
+	volume={},
+	number={},
+	pages={},
+	abstract={The clssical filleting and prediclion problem is re-examined using the Bode-Shannon representation of random processes and the ¿stat-tran-sition¿ method of analysis of dynamic systems. New result are:(1) The formulation and Methods of solution of the problm apply, without modification to stationary and nonstationary stalistics end to growing-memory and infinile -memory filters.(2) A nonlinear difference (or differential) equalion is dericed for the covariance matrix of the optimal estimalion error. From the solution of this equation the coefficients of the difference, (or differential) equation of the optimal linear filter are obtained without further caleulations.(3) Tke fillering problem is shoum to be the dual of the nois-free regulator problem. The new method developed here, is applied to do well-known problems, confirming and extending, earlier results.The discussion is largely, self-contatained, and proceeds from first principles; basic concepts of the theory of random processes are reviewed in the Appendix.},
+	keywords={},
+	doi={10.1109/9780470544334.ch9},
+	ISSN={},
+	publisher={IEEE},
+	isbn={9780470544334},
+	url={https://ieeexplore.ieee.org/document/5311910}
+}
+
+@INPROCEEDINGS{wieser_slam_indoor_2014,
+	author={I. {Wieser} and A. V. {Ruiz} and M. {Frassl} and M. {Angermann} and J. {Mueller} and M. {Lichtenstern}},
+	booktitle={2014 IEEE/ION Position, Location and Navigation Symposium - PLANS 2014},
+	title={Autonomous robotic SLAM-based indoor navigation for high resolution sampling with complete coverage},
+	year={2014},
+	volume={},
+	number={},
+	pages={945-951},
+	abstract={Recent work has shown the feasibility of pedestrian and robotic indoor localization based only on maps of the magnetic field. To obtain a complete representation of the magnetic field without initial knowledge of the environment or any existing infrastructure, we consider an autonomous robotic platform to reduce limitations of economic or operational feasibility. Therefore, we present a novel robotic system that autonomously samples any measurable physical processes at high spatial resolution in buildings without any prior knowledge of the buildings' structure. In particular we focus on adaptable robotic shapes, kinematics and sensor placements to both achieve complete coverage in hardly accessible areas and not be limited to round shaped robots. We propose a grid based representation of the robot's configuration space and graph search algorithms, such as Best-First-Search and an adaption of Dijkstra's algorithm, to guarantee complete path coverage. In combination with an optical simultaneous localization and mapping (SLAM) algorithm, we present experimental results by sampling the magnetic field in an a priori unknown office with a robotic platform autonomously and completely.},
+	keywords={graph theory;magnetic fields;mobile robots;path planning;robot kinematics;search problems;sensors;SLAM (robots);autonomous robotic SLAM-based indoor navigation;high resolution sampling;robotic indoor localization;pedestrian;magnetic field representation;building structure;adaptable robotic shapes;sensor placements;robotic kinematics;grid based representation;robot configuration space;graph search algorithms;best-first-search;Dijkstra algorithm;path coverage;optical simultaneous localization and mapping algorithm;Simultaneous localization and mapping;Optical sensors;Mobile robots;Path planning;Magnetic domains;Autonomous Navigation;Holonomic Robotic Platform;Complete Coverage;Path Planning;Optical SLAM;i Graph Search;Robot Sensing Systems;Magnetic Field},
+	doi={10.1109/PLANS.2014.6851459},
+	ISSN={2153-3598},
+	month={May}
+}
+
+@article{ebden_gaussian_2015,
+	title = {Gaussian Processes for Regression: A Quick Introduction},
+	pages = {11},
+	author = {Ebden, M},
+	langid = {english},
+	year = {2015},
+	file = {Ebden - Gaussian Processes for Regression A Quick Introdu.pdf:/home/oliver/Zotero/storage/9SVBEADV/Ebden - Gaussian Processes for Regression A Quick Introdu.pdf:application/pdf}
+}
+
+@article{kaess_isam:_2008,
+	title = {{iSAM}: Incremental Smoothing and Mapping},
+	volume = {24},
+	issn = {1552-3098, 1941-0468},
+	url = {http://ieeexplore.ieee.org/document/4682731/},
+	doi = {10.1109/TRO.2008.2006706},
+	shorttitle = {{iSAM}},
+	abstract = {We present incremental smoothing and mapping ({iSAM}), a novel approach to the simultaneous localization and mapping problem that is based on fast incremental matrix factorization. {iSAM} provides an efﬁcient and exact solution by updating a {QR} factorization of the naturally sparse smoothing information matrix, therefore recalculating only the matrix entries that actually change. {iSAM} is efﬁcient even for robot trajectories with many loops as it avoids unnecessary ﬁll-in in the factor matrix by periodic variable reordering. Also, to enable data association in real-time, we provide efﬁcient algorithms to access the estimation uncertainties of interest based on the factored information matrix. We systematically evaluate the different components of {iSAM} as well as the overall algorithm using various simulated and real-world datasets for both landmark and pose-only settings.},
+	pages = {1365--1378},
+	number = {6},
+	journaltitle = {{IEEE} Transactions on Robotics},
+	shortjournal = {{IEEE} Trans. Robot.},
+	author = {Kaess, M. and Ranganathan, A. and Dellaert, F.},
+	urldate = {2019-06-17},
+	date = {2008-12},
+	langid = {english},
+	file = {Kaess et al. - 2008 - iSAM Incremental Smoothing and Mapping.pdf:/home/oliver/Zotero/storage/NQBL76U7/Kaess et al. - 2008 - iSAM Incremental Smoothing and Mapping.pdf:application/pdf}
+}
+
+@inproceedings{hanley_magpie:_2017,
+	location = {Sapporo},
+	title = {{MagPIE}: A dataset for indoor positioning with magnetic anomalies},
+	isbn = {978-1-5090-6299-7},
+	url = {http://ieeexplore.ieee.org/document/8115961/},
+	doi = {10.1109/IPIN.2017.8115961},
+	shorttitle = {{MagPIE}},
+	abstract = {In this paper, we present a publicly available dataset for the evaluation of indoor positioning algorithms that use magnetic anomalies. Our dataset contains {IMU} and magnetometer measurements along with ground truth position measurements that have centimeter-level accuracy. To produce this dataset, we collected over 13 hours of data (51 kilometers of total distance traveled) from three different buildings, with sensors both handheld and mounted on a wheeled robot, in environments with and without changes in the placement of objects that affect magnetometer measurements (“live loads”). We conclude the paper with a discussion of why these characteristics of our dataset are important when evaluating positioning algorithms.},
+	eventtitle = {2017 International Conference on Indoor Positioning and Indoor Navigation ({IPIN})},
+	pages = {1--8},
+	booktitle = {2017 International Conference on Indoor Positioning and Indoor Navigation ({IPIN})},
+	publisher = {{IEEE}},
+	author = {Hanley, David and Faustino, Alexander B. and Zelman, Scott D. and Degenhardt, David A. and Bretl, Timothy},
+	urldate = {2019-06-17},
+	date = {2017-09},
+	langid = {english},
+	file = {Hanley et al. - 2017 - MagPIE A dataset for indoor positioning with magn.pdf:/home/oliver/Zotero/storage/MD2KAXA2/Hanley et al. - 2017 - MagPIE A dataset for indoor positioning with magn.pdf:application/pdf}
+}
+
+@article{huber_recursive_2014,
+	title = {Recursive Gaussian process: On-line regression and learning},
+	volume = {45},
+	issn = {01678655},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0167865514000786},
+	doi = {10.1016/j.patrec.2014.03.004},
+	shorttitle = {Recursive Gaussian process},
+	abstract = {Two approaches for on-line Gaussian process regression with low computational and memory demands are proposed. The ﬁrst approach assumes known hyperparameters and performs regression on a set of basis vectors that stores mean and covariance estimates of the latent function. The second approach additionally learns the hyperparameters on-line. For this purpose, techniques from nonlinear Gaussian state estimation are exploited. The proposed approaches are compared to state-of-the-art sparse Gaussian process algorithms.},
+	pages = {85--91},
+	journaltitle = {Pattern Recognition Letters},
+	shortjournal = {Pattern Recognition Letters},
+	author = {Huber, Marco F.},
+	urldate = {2019-06-17},
+	date = {2014-08},
+	langid = {english},
+	file = {Huber - 2014 - Recursive Gaussian process On-line regression and.pdf:/home/oliver/Zotero/storage/FCDXE3G4/Huber - 2014 - Recursive Gaussian process On-line regression and.pdf:application/pdf}
+}
+
+@inproceedings{huber_recursive_2013,
+	location = {Vancouver, {BC}, Canada},
+	title = {Recursive Gaussian process regression},
+	isbn = {978-1-4799-0356-6},
+	url = {http://ieeexplore.ieee.org/document/6638281/},
+	doi = {10.1109/ICASSP.2013.6638281},
+	abstract = {For large data sets, performing Gaussian process regression is computationally demanding or even intractable. If data can be processed sequentially, the recursive regression method proposed in this paper allows incorporating new data with constant computation time. For this purpose two operations are performed alternating on a ﬁxed set of so-called basis vectors used for estimating the latent function: First, inference of the latent function at the new inputs. Second, utilization of the new data for updating the estimate. Numerical simulations show that the proposed approach signiﬁcantly reduces the computation time and at the same time provides more accurate estimates compared to existing on-line and/or sparse Gaussian process regression approaches.},
+	eventtitle = {{ICASSP} 2013 - 2013 {IEEE} International Conference on Acoustics, Speech and Signal Processing ({ICASSP})},
+	pages = {3362--3366},
+	booktitle = {2013 {IEEE} International Conference on Acoustics, Speech and Signal Processing},
+	publisher = {{IEEE}},
+	author = {Huber, Marco F.},
+	urldate = {2019-06-17},
+	date = {2013-05},
+	langid = {english},
+	file = {Huber - 2013 - Recursive Gaussian process regression.pdf:/home/oliver/Zotero/storage/9G5DEAKV/Huber - 2013 - Recursive Gaussian process regression.pdf:application/pdf}
+}
+
+@article{kok_scalable_2018,
+	title = {Scalable Magnetic Field {SLAM} in 3D Using Gaussian Process Maps},
+	url = {http://arxiv.org/abs/1804.01926},
+	abstract = {We present a method for scalable and fully 3D magnetic ﬁeld simultaneous localisation and mapping ({SLAM}) using local anomalies in the magnetic ﬁeld as a source of position information. These anomalies are due to the presence of ferromagnetic material in the structure of buildings and in objects such as furniture. We represent the magnetic ﬁeld map using a Gaussian process model and take well-known physical properties of the magnetic ﬁeld into account. We build local maps using three-dimensional hexagonal block tiling. To make our approach computationally tractable we use reduced-rank Gaussian process regression in combination with a Rao–Blackwellised particle ﬁlter. We show that it is possible to obtain accurate position and orientation estimates using measurements from a smartphone, and that our approach provides a scalable magnetic ﬁeld {SLAM} algorithm in terms of both computational complexity and map storage.},
+	journaltitle = {{arXiv}:1804.01926 [cs, stat]},
+	author = {Kok, Manon and Solin, Arno},
+	urldate = {2019-06-17},
+	date = {2018-04-05},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1804.01926},
+	keywords = {Computer Science - Robotics, Electrical Engineering and Systems Science - Systems and Control, Statistics - Machine Learning},
+	file = {Kok und Solin - 2018 - Scalable Magnetic Field SLAM in 3D Using Gaussian .pdf:/home/oliver/Zotero/storage/D8YUUHZ9/Kok und Solin - 2018 - Scalable Magnetic Field SLAM in 3D Using Gaussian .pdf:application/pdf}
+}
+
+@article{yu_terrain_2018,
+	title = {Terrain field {SLAM} and Uncertainty Mapping using Gaussian Process},
+	abstract = {This paper presents a method to infer the terrain ﬁeld and robot position exploiting the vibration obtained from the interaction between terrain and mobile robot. In order for robot localization and mapping in unknown area, simultaneous localization and mapping ({SLAM}) technique is applied to map the surrounding area. In this case, when {SLAM} is performed using a ﬁeld such as {WiFi}, magnetic signal or terrain, a complete ﬁeld map should be inferred for the unexplored region as well as the explored one. Also the uncertainty should be indicated for the inferred ﬁeld, so that the ﬁeld map can be used as observation model for {SLAM}. Therefore, by modeling the observation model for the terrain ﬁeld with the Gaussian process, we estimate the observation probability distribution for the unknown regions. The inferred observation distribution can be used not only by ﬁeld maps, but also by efﬁcient path planning. We demonstrate the proposed method with the odometry of mobile robot navigating the testbed, and observations of terrain feature using simulation.},
+	pages = {4},
+	author = {Yu, Hyeonwoo and Lee, Beomhee},
+	langid = {english},
+	year = {2018},
+	file = {Yu und Lee - Terrain field SLAM and Uncertainty Mapping using G.pdf:/home/oliver/Zotero/storage/CR3TK2HK/Yu und Lee - Terrain field SLAM and Uncertainty Mapping using G.pdf:application/pdf}
+}
+
+@article{damianou_variational_2014,
+	title = {Variational Inference for Uncertainty on the Inputs of Gaussian Process Models},
+	url = {http://arxiv.org/abs/1409.2287},
+	abstract = {The Gaussian process latent variable model ({GP}-{LVM}) provides a ﬂexible approach for non-linear dimensionality reduction that has been widely applied. However, the current approach for training {GP}-{LVMs} is based on maximum likelihood, where the latent projection variables are maximized over rather than integrated out. In this paper we present a Bayesian method for training {GP}-{LVMs} by introducing a non-standard variational inference framework that allows to approximately integrate out the latent variables and subsequently train a {GP}-{LVM} by maximizing an analytic lower bound on the exact marginal likelihood. We apply this method for learning a {GP}-{LVM} from iid observations and for learning non-linear dynamical systems where the observations are temporally correlated. We show that a beneﬁt of the variational Bayesian procedure is its robustness to overﬁtting and its ability to automatically select the dimensionality of the nonlinear latent space. The resulting framework is generic, ﬂexible and easy to extend for other purposes, such as Gaussian process regression with uncertain inputs and semi-supervised Gaussian processes. We demonstrate our method on synthetic data and standard machine learning benchmarks, as well as challenging real world datasets, including high resolution video data.},
+	journaltitle = {{arXiv}:1409.2287 [cs, stat]},
+	author = {Damianou, Andreas C. and Titsias, Michalis K. and Lawrence, Neil D.},
+	urldate = {2019-06-17},
+	date = {2014-09-08},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1409.2287},
+	keywords = {60G15 (Primary), 58E30, Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning, G.1.2, G.3, I.2.6, I.5.4, Statistics - Machine Learning},
+	file = {Damianou et al. - 2014 - Variational Inference for Uncertainty on the Input.pdf:/home/oliver/Zotero/storage/9FML77H6/Damianou et al. - 2014 - Variational Inference for Uncertainty on the Input.pdf:application/pdf}
+}

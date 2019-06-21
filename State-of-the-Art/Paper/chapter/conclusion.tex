@@ -1,0 +1,44 @@
+\section{Conclusion}
+When facing the problem of SLAM using physical phenomena one challenge is
+to handle continuous functions in contrast to discrete landmarks. Moreover,
+the physical phenomena need to be approximated to use in case of SLAM. 
+For that, gaussian processes are needed.
+
+In chapter \ref{chap:slam} a current state-of-the-art graph-based SLAM
+techniques is discussed. This approach is proven but it's only working
+in case of landmarks. It should be possible to formulate the problem
+of SLAM using physical phenomena in a graph-based manner. This could
+be faced in later proceedings.
+
+A terrain field based SLAM approach was discussed in \ref{chap:terrain_field}.
+It showed that a variety of phyiscal phenomena could be used for a SLAM approach.
+In further studies different phenomena could be observed and analyzed how suitable
+they are for SLAM approaches. E.g. texture of a subsurface measured by a camera,
+emission in a city or environmental sound.
+
+Thinking of different suitable phyiscal phenomena would also lead to the question
+how to handle phenomena which change in time. Imagine autonomous submarine using
+sea streams for SLAM to monitor a gas pipeline. But sea streams won't be stable
+in time. How to still use sea streams for SLAM also would need more research to do.
+
+Another interesting thought is using only gaussian processes with uncertain input
+for SLAM without any common SLAM techniques like Kalman filter or graph-based 
+approaches. The idea would be that all measurements are taken at an uncertain
+position which is the input for the gaussian process. To use gaussian processes
+for that case, the uncertainty in the input has to decrease. Current researchers
+often only face the problem of getting more accurate in the output but not in the
+input data. Equally like the presented paper from Damianou et al. in chapter 
+\ref{chap:uncertain_inputs}.
+
+As mentioned before, different phenomena could be used for SLAM. Also, it could 
+be an aim to monitor that phenomena. But when it comes to combining monitoring
+and SLAM there has to be more work to do. In \ref{chap:complete_coverage} a
+traditional SLAM approach with focus on monitoring was introduced, but how to
+deal with phenomena changing over time (so they need to be monitored)? The certainty 
+in the measurements should decrease over time, because the measurements getting older. 
+So, there are also questions to answer.
+
+In conclusion, there are many different problems to solve. Thinking of combining
+SLAM with physical phenomena and the aim of monitoring these. Also, getting away
+from traditional SLAM approaches and only using gaussian processes with uncertain
+input or just consider new suitable physical phenomena for SLAM as mentioned before.
