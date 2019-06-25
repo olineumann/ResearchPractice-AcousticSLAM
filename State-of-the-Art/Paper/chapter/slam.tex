@@ -1,27 +1,27 @@
-\subsection{State of the art SLAM}
+\subsection{State-of-the-art SLAM}
 \label{chap:slam}
 As mentioned before, SLAM describes the field of problem where an agent or robot has to locate itself
-in an unknown environment. Therefore the agent has to build up a map. The map normally containing discrete 
+in an unknown environment. Therefore, the agent has to build up a map. Maps normally containing discrete 
 landmarks but also continuous functions or planes (as an approximation of the world) could be possible. 
-All of the techniques have in common, that the created map is always an estimation. So SLAM is a 
-probabilistic approach. The reason for that is, that all data given is uncertain. Such as current 
+All of the techniques have in common that the created map is always an estimation. So SLAM is a 
+probabilistic approach. The reason for that is that all data given is uncertain, such as current 
 position, measured value (e.g. magnetic field) or landmark position. The noise of the measurements is 
-normally gaussian distributed. 
+typically normally Gaussian distributed. 
 
-When thinking of SLAM there are two common classifications \cite{grisetti_tutorial_2010}. The first 
-class models SLAM as an on-line state estimator, where the state is the current position of the robot 
-within the map. This approach is called filtering or on-line SLAM. In contrast to that smoothing 
+When thinking of SLAM, there are two common classifications \cite{grisetti_tutorial_2010}. The first 
+class models SLAM as an on-line state estimator where the state is the current position of the robot 
+within the map. This approach is called filtering or on-line SLAM. In contrast to that, smoothing 
 approaches attempt to estimate the full trajectory of the robot based on all measurements. 
 Often smoothing is called full SLAM.
 
-Regardless of filtering or smoothing approaches, they often using Kalman or particle filter to estimate
+Regardless of filtering or smoothing approaches, they often use Kalman or particle filters to estimate
 the current state \cite{grisetti_tutorial_2010}. Kalman filter is a mathematical concept and is also known
 as linear quadratic estimation (LQE). It contains two major steps, prediction and update.
 In the prediction step the next state is predicted by using the currently given data. After that, 
-the prediction will be improved by combining the estimated state from the prediction with the new 
-measured state \cite{kalman_filter_2001}. This step is called update. Kalman filter always follow only one
-hypothesis. In contrast to that particle filters where invented. Each particle follows a specific
-hypothesis and normally there are multiple particles. So, particle filter follow multiple hypothesis.
+the prediction will be improved by combining the estimated state from the prediction with the new measurements 
+\cite{kalman_filter_2001}. This step is called update. Kalman filters always follow only one
+hypothesis. In contrast to that, particle filters follow multiple hypotheses. Each particle follows a specific
+hypothesis and normally there are many of them. So, particle filter follow multiple hypothesis.
 
 \begin{figure}[h!]
 	\centering
@@ -36,9 +36,9 @@ hypothesis and normally there are multiple particles. So, particle filter follow
 \end{figure}
 
 Current state-of-the-art techniques of SLAM using graph-based approaches. A performance showcase of 
-that is shown in figure \ref{fig:grisetti_slam_showcase}. The idea of those approaches is easy to 
+that is shown in Figure \ref{fig:grisetti_slam_showcase}. The idea of those approaches is easy to 
 understand. While the robot is moving and making measurements a graph is build up as illustrated in 
-figure \ref{fig:kaess_slam_graph}. With graph algorithms the positions $x_0$, ..., $x_n$ can now be
+Figure \ref{fig:kaess_slam_graph}. With graph algorithms the positions $x_0$, ..., $x_n$ can now be
 estimated.
 
 \begin{figure}[h!]
