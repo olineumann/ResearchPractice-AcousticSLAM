@@ -1,0 +1,74 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+
+\usepackage{cite}
+\usepackage{caption}
+
+
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{subfig}
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+
+
+\begin{document}
+%
+\title{Acoustic SLAM for unprepared environments with Gaussian Processes}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{B. Sc. Oliver Neumann \\
+Dipl. Phys. Jana Mayer \\
+Dr. Ing. Benjamin Noack}
+
+\institute{
+	Karlsruhe Institute of Technologie (KIT) \\
+	Institute for Anthropomatics and Robotics (IAR) \\
+	Intelligent Sensor-Actuator-Systems (ISAS) \\
+	Adenauerring 2 76131 Karlsruhe Germany}
+%
+\maketitle              % typeset the header of the contribution
+%
+
+\begin{abstract}
+
+% SLAM
+Simultaneous localization and mapping (SLAM) became one of the most important research fields in robotics. Modern approaches of SLAM are based on discrete landmarks that are used to estimate the position of the actor. But there are environments where no landmarks could be detected or the landmarks are not suitable for accurate localization.
+% From discrete to continuous
+Instead of discrete landmarks, researchers used physical phenomena as continuous functions for localization purposes. Roughly, the continuous function is usually approximated with a Gaussian process as the map. Measurements then will be fused with an estimated position (e.g. from an inertial measurement unit) to increase accuracy.
+% Vision
+Those approaches have promising performance and there are a lot of use cases. From indoor robot cleaning to autonomous submarines for undersea pipeline investigation up to autonomous drones for weather observation.
+% Aim
+In this project we want to investigate if a speaker and microphone together with an inertial measurement unit (IMU)  mounted on a robot, is capable of localizing itself in an unprepared environment. Therefore a specific signal will be sent via the speaker and from the microphone input, a continuous function will be derived based on the concept of room impulse response.  This function will be approximated with Gaussian processes and should be used as input for SLAM.
+
+\end{abstract}
+
+\input{sections/Motivation.tex}
+\input{sections/StateOfTheArt.tex}
+\input{sections/InitialResearch.tex}
+\input{sections/AimsAndMethods.tex}
+\input{sections/Workplan.tex}
+
+\nocite{*}
+
+
+\bibliography{sources}{}
+
+\bibliographystyle{ieeetr}
+
+
+
+\end{document}
