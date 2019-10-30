@@ -9,7 +9,7 @@
 \usepackage{caption}
 
 
-\usepackage{amsmath}
+\usepackage{amsmath,amssymb}
 \usepackage{siunitx}
 \usepackage{subfig}
 \usepackage{graphicx}
@@ -20,11 +20,9 @@
 % to display URLs in blue roman font according to Springer's eBook style:
 % \renewcommand\UrlFont{\color{blue}\rmfamily}
 
-
-
 \begin{document}
 %
-\title{Acoustic SLAM for unprepared environments with Gaussian Processes}
+\title{Acoustic SLAM for Unprepared Environments with Gaussian Processes}
 %
 %\titlerunning{Abbreviated paper title}
 % If the paper title is too long for the running head, you can set
@@ -48,7 +46,7 @@ Dr. Ing. Benjamin Noack}
 % SLAM
 Simultaneous localization and mapping (SLAM) became one of the most important research fields in robotics. Modern approaches of SLAM are based on discrete landmarks that are used to estimate the position of the actor. But there are environments where no landmarks could be detected or the landmarks are not suitable for accurate localization.
 % From discrete to continuous
-Instead of discrete landmarks, researchers used physical phenomena as continuous functions for localization purposes. Roughly, the continuous function is usually approximated with a Gaussian process as the map. Measurements then will be fused with an estimated position (e.g. from an inertial measurement unit) to increase accuracy.
+Instead of discrete landmarks, researchers used physical phenomena as continuous functions for localization purposes. The continuous function is usually approximated with a Gaussian process as the map. Measurements then will be fused with an estimated position (e.g. from an inertial measurement unit) to increase accuracy.
 % Vision
 Those approaches have promising performance and there are a lot of use cases. From indoor robot cleaning to autonomous submarines for undersea pipeline investigation up to autonomous drones for weather observation.
 % Aim
